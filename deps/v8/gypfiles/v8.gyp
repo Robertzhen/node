@@ -2075,6 +2075,8 @@
         '../src/base/platform/semaphore.h',
         '../src/base/platform/time.cc',
         '../src/base/platform/time.h',
+        '../src/base/region-allocator.cc',
+        '../src/base/region-allocator.h',
         '../src/base/ring-buffer.h',
         '../src/base/safe_conversions.h',
         '../src/base/safe_conversions_impl.h',
