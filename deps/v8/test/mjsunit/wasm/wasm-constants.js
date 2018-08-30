@@ -15,9 +15,6 @@ function bytes() {
   return buffer;
 }
 
-// V8 internal constants
-var kV8MaxPages = 32767;
-
 // Header declaration constants
 var kWasmH0 = 0;
 var kWasmH1 = 0x61;
@@ -431,7 +428,8 @@ function assertWasmThrows(runtime_id, values, code) {
     // Success.
     return;
   }
-  throw new MjsUnitAssertionError('Did not throw expected: ' + runtime_id + values);
+  throw new MjsUnitAssertionError('Did not throw expected <' + runtime_id +
+                                  '> with values: ' + values);
 }
 
 function wasmI32Const(val) {
